@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple">
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/page_back"
+                android:layout_width="17dp"
+                android:layout_height="27dp"
+                android:src="@drawable/arrow_left"
+                android:contentDescription="@string/go_back" />
+
+            <TextView
+                android:id="@+id/loginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/word_practice_title"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fredoka_500"
+                android:textSize="22sp"/>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gardener"
+        android:textColor="?attr/colorSecondary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_600"
+        android:textSize="28sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ 'gɑ:dnə ]"
+        android:textColor="?attr/colorSecondary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_400"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/muha"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/muha"
+            android:background="@drawable/word_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fredoka_500"
+            android:gravity="center"
+
+            />
+
+        <RadioButton
+            android:id="@+id/sadovnik"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/safovnik"
+            android:background="@drawable/word_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fredoka_500"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:tag="correct"/>
+
+        <RadioButton
+            android:id="@+id/gladiolus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/gladiolus"
+            android:background="@drawable/word_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fredoka_500"
+            android:layout_marginTop="15dp"
+            android:checked="true"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/belarus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/sobaka"
+            android:background="@drawable/word_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/fredoka_500"
+            android:layout_marginTop="15dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="140dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/blue_login_button"
+            android:text="@string/check"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fredoka_500"/>
+    </RadioGroup>
+
+
+
+
+
+</LinearLayout>

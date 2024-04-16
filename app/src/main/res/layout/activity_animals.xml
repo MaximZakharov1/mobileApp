@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple">
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/page_back"
+                android:layout_width="17dp"
+                android:layout_height="27dp"
+                android:src="@drawable/arrow_left"
+                android:contentDescription="@string/go_back" />
+
+            <TextView
+                android:id="@+id/loginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guess_the_animal_title"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fredoka_500"
+                android:textSize="22sp"/>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:src="@drawable/enot"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/write_who_is_on_image"
+            android:textColor="#363B44"
+            android:gravity="center"
+            android:fontFamily="@font/fredoka_400"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_input_text"
+                android:fontFamily="@font/fredoka_400"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/blue_login_button"
+        android:text="@string/check"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+
+
+</LinearLayout>

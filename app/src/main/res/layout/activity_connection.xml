@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onboarding1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="270dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="180dp"
+            android:src="@drawable/connection"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_internet_connection"
+            android:textColor="?attr/colorSecondary"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/fredoka_500"
+            android:textSize="30sp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="240dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/blue_login_button"
+        android:text="@string/check_again"
+        android:textSize="20sp"
+        android:fontFamily="@font/fredoka_500"
+        android:textColor="@color/white"/>
+
+
+
+</LinearLayout>

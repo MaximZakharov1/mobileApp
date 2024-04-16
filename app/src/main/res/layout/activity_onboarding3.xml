@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onboarding1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="220dp"
+            android:src="@drawable/onboarding3"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="the lessons" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:src="@drawable/onboard_3of3"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="3of3" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/the_lessons_you_need_to_learn"
+            android:textColor="?attr/colorSecondary"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/fredoka_500"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/using_a_variety_of_learning_styles_to_learn_and_retain"
+            android:textColor="@color/onboarding_gray"
+            android:gravity="center"
+            android:fontFamily="@font/fredoka_400"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/blue_login_button"
+        android:text="@string/choose_a_language"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/skip_onboarding"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/skip_onboarding"
+        android:textSize="17sp"
+        android:textColor="?attr/colorSecondary"
+        android:fontFamily="@font/fredoka_400"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        />
+
+
+
+
+</LinearLayout>

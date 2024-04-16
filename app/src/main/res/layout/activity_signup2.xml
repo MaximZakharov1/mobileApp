@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple">
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/page_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_left"
+                android:contentDescription="@string/go_back" />
+
+            <TextView
+                android:id="@+id/loginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fredoka_500"
+                android:textSize="17sp"/>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_a_password"
+            android:textColor="?attr/colorSecondary"
+            android:gravity="center"
+            android:fontFamily="@font/fredoka_500"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password_title"
+            android:textColor="?attr/colorSecondary"
+            android:gravity="center"
+            android:fontFamily="@font/fredoka_400"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PasswordLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#65687280"
+            android:hint="@string/password"
+            app:passwordToggleTint="#65687280"
+            app:hintAnimationEnabled="false"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/gray_input_text"
+                android:fontFamily="@font/fredoka_400" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_password"
+            android:textColor="?attr/colorSecondary"
+            android:gravity="center"
+            android:fontFamily="@font/fredoka_400"
+            android:textSize="15sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ConfirmPasswordLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#65687280"
+            android:hint="@string/confirm_password"
+            app:passwordToggleTint="#65687280"
+            app:hintAnimationEnabled="false"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ConfirmPasswordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/gray_input_text"
+                android:fontFamily="@font/fredoka_400" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/blue_login_button"
+        android:text="@string/signup"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/already_you_member_login"
+        android:textSize="17sp"
+        android:textColor="#656872"
+        android:fontFamily="@font/fredoka_400"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>

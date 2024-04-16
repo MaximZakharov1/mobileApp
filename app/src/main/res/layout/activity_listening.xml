@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple">
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/page_back"
+                android:layout_width="17dp"
+                android:layout_height="27dp"
+                android:src="@drawable/arrow_left"
+                android:contentDescription="@string/go_back" />
+
+            <TextView
+                android:id="@+id/loginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/listening"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/fredoka_500"
+                android:textSize="22sp"/>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cucumber"
+        android:textColor="?attr/colorSecondary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_500"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kju_k_mb"
+        android:textColor="?attr/colorSecondary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/fredoka_400"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:text="@string/please_press_button_and_say_this_word_our_service_will_check_your_pronunciation"
+        android:textColor="?attr/colorSecondary"
+        android:fontFamily="@font/fredoka_500"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/blue_login_button"
+        android:text="@string/check_my_speech"
+        android:textSize="20sp"
+        android:fontFamily="@font/fredoka_500"
+        android:textColor="@color/white"/>
+
+
+
+
+
+
+
+</LinearLayout>

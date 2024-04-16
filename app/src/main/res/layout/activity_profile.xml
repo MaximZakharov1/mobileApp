@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="250dp"
+                app:cardBackgroundColor="@color/avatar_background"
+                android:layout_marginBottom="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="250dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/avatar_background">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/avatar"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/avatar" />
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/fredoka_500"
+                android:text="@string/your_profile_emil"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="240dp"
+
+        >
+
+        <Button
+            android:id="@+id/dark"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/blue_login_button"
+            android:text="@string/switch_to_dark"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/change_language"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/blue_login_button"
+            android:text="@string/change_mother_language"
+            android:textSize="20sp"
+            android:fontFamily="@font/fredoka_500"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/change_image"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/blue_login_button"
+            android:text="@string/change_your_image"
+            android:textSize="20sp"
+            android:fontFamily="@font/fredoka_500"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/gray_logout_button"
+            android:text="@string/logout"
+            android:textSize="20sp"
+            android:fontFamily="@font/fredoka_500"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
